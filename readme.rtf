@@ -1,0 +1,112 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Regular_wdth_opsz120000_GRAD_wght3200000;\f1\fnil\fcharset0 .SFNS-Regular_wdth_opsz120000_GRAD_wght2580000;\f2\fnil\fcharset0 HelveticaNeue-Bold;
+\f3\fnil\fcharset0 .SFNS-Regular_wdth_opsz110000_GRAD_wght2580000;\f4\fnil\fcharset0 HelveticaNeue;\f5\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;
+\f6\fnil\fcharset0 .SFNSMono-Light_YAXS140B3BC_wght1F40000;\f7\fnil\fcharset0 .SFNSMono-Light_YAXS140B3B6_wght1F40000;}
+{\colortbl;\red255\green255\blue255;\red12\green12\blue12;\red255\green255\blue255;\red42\green44\blue51;
+}
+{\*\expandedcolortbl;;\cssrgb\c5098\c5098\c5098;\cssrgb\c100000\c100000\c100000;\cssrgb\c21961\c22745\c25882;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How to Run the Project
+\f1 \
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f2\fs30 \cf2 1. Install Prerequisites
+\f3 \
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f4\b0\fs32 \cf2 Ensure Python is installed on your machine. Then, install the required libraries:\
+\pard\pardeftab720\partightenfactor0
+
+\fs18 \cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs21 \cf4 \cb3 \strokec4 pip install numpy pandas scikit-learn matplotlib seaborn tensorflow kaggle\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f2\b\fs30 \cf2 \cb3 2. Download and Prepare the Dataset
+\f3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls1\ilvl0
+\f4\b0\fs32 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Install the Kaggle CLI:
+\fs18 \cb1 \uc0\u8232 
+\f5\fs28 \uc0\u8232 \cf4 \cb3 \strokec4 pip install kaggle \cf2 \cb1 \strokec2 \uc0\u8232 \u8232 
+\f4\fs32 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Authenticate the Kaggle API key. (Refer to the\'a0Kaggle\'a0API\'a0Documentation\'a0for setup instructions.)\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Download the NOAA dataset using the following command:
+\fs18 \cb1 \uc0\u8232 
+\f5\fs28 \uc0\u8232 \cf4 \cb3 \strokec4 kaggle datasets download -d utkarshx27/noaa-atlantic-hurricane-database \cf2 \cb1 \strokec2 \uc0\u8232 \u8232 
+\f4\fs32 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Extract the dataset into a folder named\'a0
+\f6\fs28 noaa_dataset
+\f4\fs32 :
+\fs18 \cb1 \uc0\u8232 
+\f5\fs28 \uc0\u8232 \cf4 \cb3 \strokec4 unzip noaa-atlantic-hurricane-database.zip -d noaa_dataset \cf2 \cb1 \strokec2 \uc0\u8232 \u8232 
+\f4\fs32 \
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f2\b\fs30 \cf2 \cb3 3. Run the Scripts
+\f3 \
+\pard\pardeftab720\sa120\partightenfactor0
+
+\f4\b0\fs32 \cf2 Each script corresponds to a different machine learning task. Use any Python environment to execute these scripts (e.g., Jupyter Notebook, VS Code, or directly in the terminal):\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0
+\f3\b \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Linear Regression
+\f4\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Script:\'a0
+\f7\fs28 linear_regression.py
+\f4\fs32 \cb1 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Predicts hurricane wind speed and evaluates using MAE, MSE, and R-squared.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0
+\f3\b \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Random Forest Classifier
+\f4\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Script:\'a0
+\f7\fs28 random_forest.py
+\f4\fs32 \cb1 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Classifies storm status and visualizes feature importance and confusion matrix.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0
+\f3\b \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Logistic Regression
+\f4\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Script:\'a0
+\f7\fs28 logistic_regression.py
+\f4\fs32 \cb1 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Predicts storm categories and generates evaluation metrics such as accuracy, AUC, and confusion matrix.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0
+\f3\b \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 LSTM RNN
+\f4\b0 :\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Script:\'a0
+\f7\fs28 lstm_rnn.py
+\f4\fs32 \cb1 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Forecasts wind speed using sequential data with metrics like MAE and R-squared.\cb1 \
+}
